@@ -11,5 +11,10 @@ void main(){
         n=n/10;
         s=s*10+r;
     }
-    printf("The Revese of %d is %d",p,s);
+    if (p==s){
+          printf("The number is palindrome");
+    }
+    else{
+        printf("Not palindrome");
+    }
 }
