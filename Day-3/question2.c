@@ -17,4 +17,4 @@ void main(){
             printf("%d ",j);
         }
     }
-}
+} 
