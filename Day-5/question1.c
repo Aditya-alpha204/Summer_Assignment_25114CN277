@@ -1,7 +1,7 @@
 #include<stdio.h>
 void main(){
     int n;
-    printf("Enter Number To check Perfect or not");
+    printf("Enter Number To check Perfect or not:\n");
     scanf("%d",&n);
     int s=0;
     for(int i=1;i<n;i++){
