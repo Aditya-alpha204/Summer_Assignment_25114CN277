@@ -1,7 +1,7 @@
 #include<stdio.h>
 void main(){
     int n;
-    printf("Enter Number to check Strong or not");
+    printf("Enter Number to check Strong or not:\n");
     scanf("%d",&n);
     int p=n;
     int m=1,s=0,r=0;
