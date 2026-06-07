@@ -1,19 +1,26 @@
 #include <stdio.h>
-int sum(int n) {
+int fibonacci(int n) {
     if (n == 0) {
         return 0;
     } 
+    else if (n == 1) {
+        return 1;
+    } 
     else {
-        int r=n%10;
-        n=n/10;
-        return r+sum(n);
+        return fibonacci(n - 1) + fibonacci(n - 2);
     }
 }
 int main() {
-    int n;
+    int terms;
     
-    printf("Enter the number: ");
-    scanf("%d", &n);
-    printf("The sum of digits is %d",sum(n));
+    printf("Enter the number of terms for the series: ");
+    scanf("%d", &terms);
+    
+    printf("Fibonacci Series: ");
+    for (int i = 0; i < terms; i++) {
+        printf("%d ", fibonacci(i));
+    }
+    
+    printf("\n");
     return 0;
 }
