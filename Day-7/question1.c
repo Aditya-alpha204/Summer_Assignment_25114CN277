@@ -10,7 +10,7 @@ fact(int n){
 }
 int main(){
         int n;
-        printf("Enter a number: ");
+        printf("Enter a number");
         scanf("%d",&n);
         int result=fact(n);
         printf("The factorial of %d is %d ",n,result);
