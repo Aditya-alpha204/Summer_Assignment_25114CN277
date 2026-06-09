@@ -1,9 +1,10 @@
 #include<stdio.h>
 void main(){
-    for(int n=5;n>=1;n--){
-        for(int i=1;i<=n;i++){
-            printf("%d ",i);
-        }
-        printf("\n");
+    for(int n=0;n<=4;n++){
+        for(int i=1;i<=n+1;i++){
+            printf("%c ",'A'+n);
+          
     }
+    printf("\n");
+}
 }
