@@ -1,5 +1,5 @@
 #include<stdio.h>
-void main(){
+int main(){
     printf("Enter sizeof array: ");
     int size;
     scanf("%d",&size);
@@ -8,7 +8,7 @@ void main(){
         printf("Enter %d element: ",i+1);
         scanf("%d",&arr[i]);
     }
-    int t=0,max=0,p;
+    int t=0,ma=0,p;
     for(int i=0;i<size;i++){
         t=0;
         for(int j=0;j<size;j++){
@@ -16,12 +16,13 @@ void main(){
             t++;
            }
         }
-        if(t>max){
-            max=t;
+        if(t>ma){
+            ma=t;
             p=arr[i];
         }
           
     }
-    printf("Maximum frequency element is %d",p);
+    printf("Maximum frequency element is %d with frequency %d",p,ma);
+    return 0;
 
 }
