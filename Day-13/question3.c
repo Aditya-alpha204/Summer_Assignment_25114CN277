@@ -3,8 +3,7 @@
 
 void main(){
     printf("Enter size of array: ");
-    int size,s=0;
-    float avg;
+    int size;
     scanf("%d",&size);
     int arr[size];
     for(int i=0;i<size;i++){
