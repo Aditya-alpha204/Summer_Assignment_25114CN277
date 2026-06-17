@@ -16,28 +16,23 @@ int main(){
         printf("Enter %d element: ",i+1);
         scanf("%d",&brr[i]);
     }
-    int crr[si+s];
+    int crr[si];
+    int k=0;
     for(int i=0;i<si;i++){
-        crr[i]=arr[i];
-    }   
-    int k=si;
-    for(int j=0;j<s;j++){
-        int duplicate=0;
-        for(int i=0;i<k;i++){
-           if(crr[i]==brr[j]){
-              duplicate=1;
-              break;
-           }
+        int du=0;
+        for(int j=0;j<s;j++){
+            if(arr[i]==brr[j]){
+                du=1;
+                break;
+            }
         }
-        if(duplicate==0){
-            crr[k]=brr[j];
-            k++;
+        if(du==0){
+            crr[k]=arr[i];
         }
     }
-    printf("The union array is :\n");
+    printf("The intersection is :\n");
     for(int i=0;i<k;i++){
         printf("%d ",crr[i]);
     }
     return 0;
-
 }
