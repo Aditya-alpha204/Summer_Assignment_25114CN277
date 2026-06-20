@@ -17,7 +17,7 @@ int main(){
     for(int i=0;i<columns;i++){
         int s=0;
         for(int j=0;j<rows;j++){
-           s=s+arr[i][j];
+           s=s+arr[j][i];
         }
         printf("The sum of column %d is %d",i+1,s);
   
