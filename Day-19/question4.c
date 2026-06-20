@@ -11,20 +11,15 @@ int main(){
             scanf("%d",&arr[i][j]);
         }
     }
- 
-    int crr[rows][rows];
-    printf("The transpose of matrix is\n");
+    int s=0;
+    printf("The sum of diagonal elements of matrix is\n");
     for(int i=0;i<rows;i++){
         for(int j=0;j<rows;j++){
-            crr[j][i]=arr[i][j];
+            if(i==j){
+               s=s+arr[i][j];
+            }
 
         }
     }
-    for(int i=0;i<rows;i++){
-        for(int j=0;j<rows;j++){
-            printf("%d ",crr[i][j]);
-        }
-        printf("\n");
-    }
-
+    printf("%d",s);
 }
