@@ -8,5 +8,8 @@ int main(){
     while(str[l]!='\0'){
         l++;
     }
-    printf("The lenth of string is: %d",l);
+    printf("The Reverse string is:\n");    
+    for(int i=l-1;i>=0;i--){
+         printf("%c",str[i]);
+    }
 }
