@@ -17,6 +17,7 @@ int main(){
        }
        else{
         palin++;
+        break;
        }
     }
     if(palin==0){
