@@ -12,7 +12,7 @@ int main(){
     int i=0;
     while(str[i]!='\0'){
         freq[str[i]]++;
-        i++;
+        i++;     
         
     }
     for(int j=0;j<256;j++){
